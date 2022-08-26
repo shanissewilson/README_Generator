@@ -1,15 +1,15 @@
 {
-  "name": "static-site",
-  "version": "1.0.0",
-  "description": "This is a terminal application for users to use the command-line to generate a README file.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Shanisse Wilson",
-  "license": "ISC",
-  "dependencies": {
-    "axios": "0.27.2",
-    "inquirer": "^6.3.1"
+    "name": "static-site",
+    "version": "1.0.0",
+    "description": "This is a terminal application for users to use the command-line to generate a README file.",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Shanisse Wilson",
+    "license": "ISC",
+    "dependencies": {
+      "inquirer": "^8.2.4"
+    }
   }
-}
+  
