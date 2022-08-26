@@ -11,3 +11,10 @@ Git Repo: https://github.com/shanissewilson/README_Generator
 # Credits
 https://github.com/connietran-dev/readme-generator
 Tutoring sessions 
+
+# Video
+
+
+https://user-images.githubusercontent.com/105824675/187001172-c7282f2d-ce39-48e3-b220-e836dc7d35fc.mp4
+
+
