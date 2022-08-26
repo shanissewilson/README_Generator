@@ -76,3 +76,45 @@ name: 'installation'
     name: 'license'
 }
 ];
+
+// TODO: Create a function to write README file
+function writeToFile(fileName, data) {
+    // fs.writeFile(fileName, data, err => {
+    //     if (err) {
+    //         return console.log(err);
+    //     }
+    //     console.log("Yay! Your README file has been created!")
+
+    // });
+    return fs.writeFileSync(path.join(process.cwd(),fileName),data)
+}
+
+
+// TODO: Create a function to initialize app
+function init() {
+    // try {
+
+    //     const userResponses = await inquirer.prompt(questions);
+    //     console.log("Your responses: ", userResponses);
+    //     console.log("Thank you for your response! Now pulling up your GitHub data!");
+
+    //     const userInfo = await api.getUser(userResponses);
+    //     console.log("Your GitHub info: ", userInfo);
+
+    //     console.log("Creating your README...")
+    //     const markdown = generateMarkdown(userResponses, userInfo);
+    //     console.log(markdown);
+
+    //     await fs.writeFileAsync('ExampleREADME.md', markdown);
+
+    // } catch (error) {
+    //     console.log(error);
+    // }
+    inquirer.prompt(questions).then(inquirerResponses =>{
+        console.log("generating README")
+        writeToFile("README.md",generateMarkdown({...inquirerResponses}))
+    })
+};
+
+// Function call to initialize app
+init();
